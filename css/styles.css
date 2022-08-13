@@ -366,20 +366,27 @@ footer.footer a {
 }
 
 .back-to-top {
+    font-size: 4rem;
     position: fixed;
     bottom: 10%;
     right: 3rem;
-    background-color: blueviolet;
-    color: blanchedalmond;
-    text-decoration: none;  
-    padding: 1rem;
     width: 5rem;
     height: 5rem;
+    padding: 1rem;  
     border-radius: 50%;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: blueviolet;
+    border: 0.3rem solid blanchedalmond;
+}
+
+.back-to-top:hover {
+    background-color: blueviolet;
+    color: blanchedalmond;
 }
 
 /*____________________________________________________________________*/
