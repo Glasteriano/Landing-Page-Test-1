@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Oswald:wght@300&family=Tiro+Gurmukhi:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+    <section class="position-fixed header center-page">
+        <input type="checkbox" id="close-menu" aria-label="Close menu" role="button" class="close-menu">
+        <label for="close-menu" title="close menu" class="close-menu-label"></label>
+    
+        <h1 class="horizontal-center">Welcome to My Page</h1>
+        <p class="horizontal-center">This is a test</p>
+        <nav>
+            <ul onclick="getElementById('close-menu').checked = false;" class="display-flex justify-between center-page page-width no-disc menu">
+
+                <li class="horizontal-center">
+                    <a href="#principal">Principal</a>
+                </li>
+
+                <li class="horizontal-center">
+                    <a href="#data">Data</a>
+                </li>
+                    
+                <li class="horizontal-center">
+                    <a href="#top3">Top 3</a>
+                </li>
+                    
+                <li class="horizontal-center">
+                    <a href="#photos">Photos</a>
+                </li>
+                    
+                <li class="horizontal-center">
+                    <a href="#table">Table</a>
+                </li>
+
+                <li class="horizontal-center">
+                    <a href="#contact">Contact</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </section>
+
+
+    <section id="principal" class="all-page page-width grid template-grid-principal horizontal-center">
+        <div>
+            <h2>Meditações</h2>
+
+            <blockquote>
+                <q cite="https://www.spartacusbrasil.com/l/estoicismo-frases-estoicas/">O sábio não se eleva 
+                    pela prosperidade nem se abate pela adversidade; pois sempre ele se esforçou para confiar 
+                    predominantemente em si mesmo e obter toda a alegria.</q> ― Sêneca
+            </blockquote>
+        </div>
+
+        <div class="row2-col1">
+            <h2 lang="en">Meditations</h2>
+
+            <blockquote>
+                <q lang="en" cite="https://dailystoic.com/stoic-quotes/">In your actions, don’t procrastinate. 
+                    In your conversations, don’t confuse. In your thoughts, don’t wander. In your soul, don’t 
+                    be passive or aggressive. In your life, don’t be all about business.</q> – Marcus Aurelius
+            </blockquote>
+        </div>
+
+
+        <div class="set-img justify-center row1-col2">
+            <img src="./img/data_reports.svg" alt="Data Report"> <!-- Descrever melhor depois -->
+        </div>
+    </section>
+
+    
+    <section id="data" class="all-page page-width">
+        <h2>Why data is Important?</h2>
+
+        <section class="display-flex center-page center-two-col-two-row">
+            <div>
+                <div>
+                    <h3 class="horizontal-center">Improve People’s Lives</h3>
+
+                    <p>Data will help you to improve quality of life for people you support: Improving quality 
+                        is first and foremost among the reasons why organizations should be using data. 
+                        By allowing you to measure and take action, an effective data system can enable your 
+                        organization to improve the quality of people’s lives.</p>
+                </div>
+
+                <div>
+                    <h3 class="horizontal-center">Make Informed Decisions</h3>
+
+                    <p>Data = Knowledge. Good data provides indisputable evidence, while anecdotal evidence, 
+                        assumptions, or abstract observation might lead to wasted resources due to taking 
+                        action based on an incorrect conclusion.</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3 class="horizontal-center">Get The Results You Want</h3>
+
+                    <p>Data allows organizations to measure the effectiveness of a given strategy: 
+                        When strategies are put into place to overcome a challenge, collecting data will 
+                        allow you to determine how well your solution is performing, and whether or not 
+                        your approach needs to be tweaked or changed over the long-term.</p>
+                </div>
+
+                <div>
+                    <h3 class="horizontal-center">Stop The Guessing Game</h3>
+
+                    <p>Data will help you explain (both good and bad) decisions to your stakeholders. 
+                        Whether or not your strategies and decisions have the outcome you anticipated, you can be 
+                        confident that you developed your approach based not upon guesses, but good solid data.</p>
+                </div>
+            </div>
+
+            
+        </section>
+        <p class="mobile500">Source: <cite><small>www.c-q-l.org/resources/guides/12-reasons-why-data-is-important/</small></cite></p>
+    </section>
+
+    <section id="top3" class="all-page page-width">
+        <h2>Top 3</h2>
+
+        <section class="display-flex center-page grid template-grid-top3 counter">
+
+            <div class="relative">
+                <h3 class="horizontal-center">Google Cloud Machine Learning Engine</h3>
+                <p>
+                    Google Cloud Machine Learning Engine will help you with training your model. Components provided 
+                    by Cloud ML Engine include Google Cloud Platform Console, gcloud, and REST API.
+                </p>
+
+                <ul>
+                    <li>Google cloud will help in training, analyzing and tuning your model.</li>
+                    <li>This trained model will then get deployed</li>
+                    <li>Then you will be able to get predictions, monitor those predictions and will also be able 
+                        to manage your models and its versions.</li>
+                    <li>Google Cloud ML has 3 components, i.e. Google Cloud Platform Console is a UI interface for 
+                        deploying models & managing these models, versions, & jobs; gcloud is a command line tool 
+                        for managing the models and versions, and REST API is for online predictions.</li>
+                </ul>
+            </div>
+
+            <div class="relative">
+                <h3 class="horizontal-center">Azure Machine Learning Studio</h3>
+                <p>
+                    This tool will help you to deploy your model as a web service. This web service will be platform 
+                    independent and will also be able to use any data source.
+                </p>
+
+                <ul>
+                    <li>It can deploy the models in cloud and on-premises and at the edge.</li>
+                    <li>Provides browser-based solution.</li>
+                    <li>Easy to use because of its drag and drop feature.</li>
+                    <li>It is scalable.</li>
+                </ul>
+            </div>
+
+            <div class="relative">
+                <h3 class="horizontal-center">TensorFlow</h3>
+                <p>
+                    It is a numeric computational tool and an open source system. This ML library is mainly for 
+                    research and production.
+                </p>
+
+                <p>The solution can be deployed on: </p>
+                <ul>
+                    <li>CPUs, GPUs, and TPUs.</li>
+                    <li>Desktops</li>
+                    <li>Clusters</li>
+                    <li>Mobiles</li>
+                    <li>Edge devices</li>
+                    <li>Beginners and experts can use APIs provided by TensorFlow for development.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <p class="mobile500">Source: <cite><small>www.softwaretestinghelp.com/artificial-intelligence-software/</small></cite></p>
+
+    </section>
+
+    <section id="photos" class="all-page page-width">
+        <h2>Photos</h2>
+
+        <div class="grid-img">
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=1" alt="Random photo">
+            </div>
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=2" alt="Random photo">
+            </div>
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=3" alt="Random photo">
+            </div>
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=4" alt="Random photo">
+            </div>
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=5" alt="Random photo">
+            </div>
+            <div class="gallery-img">
+                <img src="https://picsum.photos/600?random=6" alt="Random photo">
+            </div>
+        </div>
+
+        <p class="mobile500">Source: <cite><small>picsum.photos</small></cite></p>
+    </section>
+
+    <section id="table" class="all-page page-width">
+        <h2>Pricing</h2>
+
+        <div class="responsive-table">
+            <table class="center-page">
+                <caption>This is a test</caption>
+
+                <thead>
+                    <tr>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 4</th>
+                        <th>Title 5</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Something 1</td>
+                        <td>Something 2</td>
+                        <td>Something 3</td>
+                        <td>Something 4</td>
+                        <td>Something 5</td>
+                    </tr>
+                    <tr>
+                        <td>Something 1</td>
+                        <td>Something 2</td>
+                        <td>Something 3</td>
+                        <td>Something 4</td>
+                        <td>Something 5</td>
+                    </tr>
+                    <tr>
+                        <td>Something 1</td>
+                        <td>Something 2</td>
+                        <td>Something 3</td>
+                        <td>Something 4</td>
+                        <td>Something 5</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td>Total</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="contact" class="all-page page-width">
+        <h2>Contato</h2>
+
+        <fieldset class="set-fieldset center-two-col-two-row center-page">
+        
+            <legend>Contact me</legend>
+            
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="ex.: email@mail.com" autocomplete="off">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..." autocomplete="off"></textarea>
+            </div>
+
+            <div class="form-group full-width">
+                <button type="submit">Send message</button>
+            </div>
+
+        </fieldset>
+
+        <footer class="center-page footer">
+            <p><a href="https://beacons.ai/glasteriano" class="my-link" target="_blank" rel="nofollow">Made with <span>❤</span> by Glæteriano</a></p>
+        </footer>
+    </section>
+
+    <a href="#" class="back-to-top">⇪</a>
+
+</body>
+</html>

@@ -1,0 +1,492 @@
+/* 
+font-family: 'Lora', serif;
+font-family: 'Tiro Gurmukhi', serif;
+*/
+
+/* Fontes das imagens e dados */
+/* https://undraw.co */
+/* https://uxwing.com/category/banking-finance/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lora', serif;
+    color: blanchedalmond;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/diamond-sunset.svg");
+}
+
+h2 {
+    margin: 1.6rem;
+}
+
+section:not(:nth-child(1), h2 ~ section) {
+    margin: 0 auto;
+    padding-top: 11rem;   
+}
+
+li {
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+a:not(.back-to-top) {
+    /* background-color: crimson; */
+    color: blanchedalmond;
+    text-decoration: none;  
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+a:not(.back-to-top, .my-link)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.4rem;
+    background-color: blueviolet;
+    transition: all 300ms ease;
+}
+
+a:active,
+::selection {
+    background-color: blueviolet;
+    color: blanchedalmond;
+}
+
+.relative {
+    position: relative;
+}
+
+a:hover {
+    background-color: rgba(36, 35, 35, 0.9);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+p {
+    /* background-color: aqua; */
+    margin: 1rem;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+p:not(h1 ~ p, footer p),
+blockquote {
+    padding: 1%;
+    text-align: justify;
+    text-indent: 10%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+table td, table th {
+    border: 0.3rem solid blueviolet;
+    padding: 0.5rem;
+}
+
+tfoot td, table th {
+    background-color: blueviolet;
+    font-style: italic;
+}
+
+caption {
+    text-align: left;
+    text-decoration: double underline;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+span {
+    color: violet;
+}
+
+.close-menu {   
+    display: none;
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+.no-disc {
+    list-style-type: none;
+}
+
+.all-page {
+    min-height: 100vh;
+}
+
+.horizontal-center {
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.position-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.justify-between {
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 10px 0; */
+    /* padding: 5px; */
+}
+
+.page-width {
+    max-width: 95rem;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.center-page {
+    margin: 0 auto;
+}
+
+.counter {
+    counter-reset: counter;
+}
+
+.grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.template-grid-principal {
+    grid-template-columns: 3fr 5fr;
+}
+
+.row2-col1 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: -10rem;
+}
+
+.row1-col2 {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.template-grid-top3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.template-grid-top3 div ul li {
+    width: 80%;
+    text-align: justify;
+    margin: 1rem auto;
+    text-indent: 5%;
+}
+
+.template-grid-top3 div h3 {
+    padding-left: 7rem;
+    justify-content: baseline;
+}
+
+.template-grid-top3 div h3::before {
+    font-size: 5rem;
+    counter-increment: counter;
+    content: counter(counter);
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    font-style: italic;
+    transform: rotate(10deg);
+}
+
+.set-img img {
+    margin: 2rem;
+    max-width: 90%;
+    height: auto;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+
+.center-two-col-two-row {
+    width: 80%;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 10%;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    margin: auto 5%;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 40rem;
+    max-height: 40rem;
+    overflow: hidden;
+} 
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    /* transform: translate(-3%, 3%) rotate(-5deg); */
+    transform: scale(0.7) translate(-30%, -25%);
+
+}
+
+.set-fieldset {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    /* margin: 0 auto;
+    text-align: center;
+    justify-content: center; */
+}
+
+.set-fieldset legend {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background-color: blueviolet;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    width: 100%;
+    color: blanchedalmond;
+    outline: none;
+}
+
+.form-group button {
+    border: 0.5rem solid blueviolet;
+    background: none;
+    color: blanchedalmond;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    outline: none;
+}
+
+.form-group button:hover {
+    color: blueviolet;
+    background-color: blanchedalmond;
+    border-color: blanchedalmond;
+}
+
+.form-group ::placeholder {
+    color: rgba(255, 235, 205, 0.617);
+    border: none;
+
+}
+
+.form-group :focus {
+    box-shadow: 0 0 5px 5px blueviolet;
+    background-color: rgba(137, 43, 226, 0.2);
+}
+
+.full-width {
+    width: 100%;    
+    flex: 1 1 100%;
+}
+
+footer.footer {
+    margin-top: 3rem;
+    display: inline;
+    width: auto;
+}
+
+footer.footer a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.my-link {
+    display: unset;
+    position: unset;
+    text-decoration: underline;
+}
+
+.my-link:hover {
+    background-color: unset;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10%;
+    right: 3rem;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    text-decoration: none;  
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+/*____________________________________________________________________*/
+
+@media (max-width: 701px) {
+    .row2-col1 {
+        grid-area: 1 / 2 / 2 / 3;
+        margin-top: 0;
+    }
+    
+    .row1-col2 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .template-grid-principal {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.6rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu li {
+        margin: 2rem;
+    }
+
+    .close-menu-label::after {
+        content: "☰";
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 1rem;
+        /* background-color: blanchedalmond; */
+        color: blueviolet;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked ~ nav .menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .close-menu:checked ~ .close-menu-label::after {
+        content: "×";
+        font-size: 5rem;
+    }
+
+    section:not(:nth-child(1), h2 ~ section) {
+        padding-top: 6rem;   
+    }
+}
+
+@media (max-width: 601px) {
+    .grid {
+        display: flex;  
+        flex-flow: row wrap;
+        padding: 2rem;
+    }
+
+    .template-grid-top3 div {
+        margin-bottom: 5rem;
+
+    }
+        
+    .template-grid-top3 div h3 {
+        justify-content: baseline;
+    }
+
+    .horizontal-center:not(h1, p, li) {
+        text-align: left;
+    }
+    
+    .grid-img {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media (max-width: 501px) {
+    section.display-flex {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+   .mobile500 {
+        text-indent: 0%;
+    }
+
+    .grid-img {
+        display: flex;
+        flex-flow: row wrap;
+        /* grid-template-columns: auto; */
+        justify-content: center;
+        gap: 1.6rem;
+    }
+
+    .gallery-img img:hover {
+        /* transform: translate(-3%, 3%) rotate(-5deg); */
+        transform: scale(0.85) translate(-30%, -25%);  
+    }
+}
